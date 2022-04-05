@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Varta:wght@300;400;500&amp;display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  background-image: url("./images/bg-cover.png");
+}
+/* header container */
+
+.header__container {
+  position: relative;
+  width: 800px;
+  margin-top: 25px;
+  margin-left: 25px;
+}
+.header__container h3 {
+  font-family: "Varta";
+  font-style: normal;
+  font-weight: 400;
+  margin-bottom: 25px;
+}
+.header__container p {
+  font-family: "Varta";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+/* slider main container */
+
+.main__container {
+  padding-top: 150px;
+  height: 500px;
+}
+
+.slider__container {
+  display: flex;
+  justify-content: space-evenly;
+}
+.slider__items {
+  padding: 10px;
+  transition: all 0.2s ease;
+}
+.slider__items img {
+  width: 200px;
+  display: block;
+  margin: auto;
+}
+
+/* active state */
+
+.active {
+  border: 2px solid grey;
+  background-image: url("./images/wheel-bg.jpg");
+  transform: scale(1.45);
+  z-index: 999;
+}
+
+/* wheel text */
+
+.black__text {
+  text-align: center;
+  font-family: "Varta";
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: 12px;
+  font-weight: 700;
+}
+.black__text__sm {
+  text-align: center;
+  font-size: 12px;
+  font-weight: 700;
+}
+.grey__text {
+  text-align: center;
+  padding-bottom: 5px;
+  color: rgb(80, 75, 75);
+  font-weight: 700;
+  font-size: 12px;
+}
+
+
+/* controllers previous next */
+
+.left-btn {
+  padding: 20px 20px;
+  font-size: 18px;
+  border: none;
+  font-weight: 600;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  position: absolute;
+  top: 60%;
+  left: 0;
+}
+.right-btn {
+  padding: 20px 20px;
+  font-size: 18px;
+  border: none;
+  font-weight: 600;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  position: absolute;
+  top: 60%;
+  right: 0;
+}
